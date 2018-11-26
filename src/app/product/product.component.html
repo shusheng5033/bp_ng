@@ -4,11 +4,11 @@
     <img src="https://place-hold.it/320x150">
     <div class="caption">
       <h4 class="pull-right">{{product.price}}</h4>
-      <h4><a href="#">{{product.title}}</a></h4>
+      <h4><a [routerLink]="'/product/'+product.title">{{product.title}}</a></h4>
       <p>{{product.desc}}</p>
     </div>
     <div>
-      <app-star></app-star>
+      <app-star [rating]="product.rating"></app-star>
     </div>
   </div>
 </div>

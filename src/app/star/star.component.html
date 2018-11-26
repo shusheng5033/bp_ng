@@ -1,3 +1,5 @@
 <p>
-  评分
+  <span *ngFor="let star of stars" class="glyphicon glyphicon-star" [class.glyphicon-star-empty]="star"></span>
+  &nbsp;&nbsp;<span>{{rating}}星</span>
 </p>
+ 
