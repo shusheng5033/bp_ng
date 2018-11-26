@@ -1,12 +1,11 @@
 
-<div class="col-sm-4 col-md-4 col-md-4">
+<div *ngFor="let product of products" class="col-sm-4 col-md-4 col-md-4">
   <div class="thumbnail">
     <img src="https://place-hold.it/320x150">
     <div class="caption">
-      <h4 class="pull-right">价格</h4>
-      <h4><a href="#">商品名称</a></h4>
-      <p>描述</p>
-      <p>分类标签</p>
+      <h4 class="pull-right">{{product.price}}</h4>
+      <h4><a href="#">{{product.title}}</a></h4>
+      <p>{{product.desc}}</p>
     </div>
     <div>
       <app-star></app-star>
